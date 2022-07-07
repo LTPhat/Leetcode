@@ -31,16 +31,24 @@
 # 0 <= s3.length <= 200
 # s1, s2, and s3 consist of lowercase English letters.
 
-#Recursion solution
+# Algorithm
+
+
 #      0    1    2    3    4    5
 #      d    b    b    c    a
 # 0  a 
+
 # 1  a 
+
 # 2  b
+
 # 3  b
+
 # 4  c
 # 5  
 
+
+#Recursion solution
 class Solution(object):
     def isInterleave(self, s1, s2, s3):
         dp = {}
@@ -58,5 +66,4 @@ class Solution(object):
         if len(s1)+ len(s2) != len(s3):
             return False
         return grid(0,0)
-        
         
