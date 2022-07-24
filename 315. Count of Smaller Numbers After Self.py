@@ -19,6 +19,7 @@
 
 # Input: nums = [-1,-1]
 # Output: [0,0]
+import bisect
 class Solution(object):
     def countSmaller(self, nums):
         ans = []
